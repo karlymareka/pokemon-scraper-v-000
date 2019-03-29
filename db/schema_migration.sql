@@ -6,5 +6,5 @@ name TEXT,
 type TEXT);
 
 ALTER TABLE pokemon
-ADD COLUMN hp default;
+ADD COLUMN hp default 60;
 
