@@ -15,7 +15,7 @@ class Pokemon
   end
   
   def self.find(id, db, hp: nil)
-    new_pokemon = db.execute("SELECT id, name, type FROM pokemon")
+    new_pokemon = db.execute("SELECT id, name, type, hp FROM pokemon")
     new_pokemon.each do |creature|
       if creature[0] == id
         return self.new(id: creature[0], name: creature[1], type: creature[2], db: db)
