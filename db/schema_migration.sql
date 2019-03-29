@@ -5,6 +5,5 @@ id INTEGER PRIMARY KEY,
 name TEXT,
 type TEXT);
 
-ALTER TABLE pokemon
-ADD COLUMN hp default 60;
+
 
