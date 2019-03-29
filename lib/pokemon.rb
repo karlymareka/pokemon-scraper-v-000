@@ -19,7 +19,7 @@ class Pokemon
     new_pokemon = db.execute("SELECT id, name, type, hp FROM pokemon")
     new_pokemon.each do |creature|
       if creature[0] == id
-        return self.new(id: creature[0], name: creature[1], type: creature[2], db: creature[3])
+        return self.new(id: creature[0], name: creature[1], type: creature[2], db: creature[3], hp: creature[4])
       end
     end 
   end
