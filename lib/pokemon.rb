@@ -20,5 +20,8 @@ class Pokemon
         return self.new(id: creature[0], name: creature[1], type: creature[2], db: db)
       end
     end 
-  end 
+  end
+  
+  def alter_hp(hp)
+    
 end
