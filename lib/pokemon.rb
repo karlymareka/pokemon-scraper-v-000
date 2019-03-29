@@ -14,7 +14,7 @@ class Pokemon
      db.execute("INSERT INTO pokemon (id, name, type) VALUES (?, ?, ?)", @id, name, type)
   end
   
-  def self.find(id, db, hp)
+  def self.find(id, db, hp: nil)
     new_pokemon = db.execute("SELECT id, name, type FROM pokemon")
     new_pokemon.each do |creature|
       if creature[0] == id
